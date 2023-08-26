@@ -17,20 +17,6 @@
 	
   }
 
-  #goBack{
-	width: 220px;
-	height: 30px;
-	background: #fff;
-	border-radius: 10px;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	text-decoration: dashed;
-	cursor: pointer;
-	position: absolute;
-	left: 3%;
-	top: 3%
-  }
   .wrapper{
 	width: 450px;
 	background: #fff;
