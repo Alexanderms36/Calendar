@@ -14,9 +14,23 @@
 	justify-content: center;
 	min-height: 100vh;
 	background: #985986;
-
+	
   }
 
+  #goBack{
+	width: 220px;
+	height: 30px;
+	background: #fff;
+	border-radius: 10px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	text-decoration: dashed;
+	cursor: pointer;
+	position: absolute;
+	left: 3%;
+	top: 3%
+  }
   .wrapper{
 	width: 450px;
 	background: #fff;
@@ -31,11 +45,30 @@
 	animation: rotateAnimation;
 	animation: rotateBack;
 }
+
+  header{
+	position: relative;
+	justify-content: center;
+
+  }
+  header #emojiMonth{
+	justify-content: center;
+	font-size: 32px;
+	display: flex;
+	margin: 10px;
+	position: absolute;
+	top: 30%;
+	left: 18;
+	z-index: 2;
+  }
+  
   header .current-date{
 	font-size: 1.46rem;
 	font-weight: 500;
-
+  	position: relative;
+  	z-index: 1;
   }
+
   header .icons span{
 	height: 40px;
 	width: 40px;

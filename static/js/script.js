@@ -10,7 +10,7 @@ const backIcon = document.getElementById('back-to-the-front');
 const backDone = document.querySelector("#backDone");
 const backCancel = document.querySelector("#backCancel");
 const txtArea = document.querySelector("#reasonTextField");
-
+const goBack = document.querySelector("#goBack");
 
 
 
@@ -25,6 +25,10 @@ months = ["Январь", "Февраль", "Март", "Апрель", "Май"
 
 monthsRodP = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
 		"Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+
+
+monthsEmoji = ["🌠", "🌌", "💐", "🌺", "🌳", "😊",
+"🍉", "🌄", "🌾", "🍂", "❄", "🎄"];		
 
 const renderCalendar = () => {
 	let firstDateofMonth = new Date(currYear, currMonth, 1).getDay(); //1st date месяца
@@ -76,7 +80,7 @@ const renderCalendar = () => {
 					backDone.classList.remove('glowingGreen');
 				  }, 1000);
 				txtArea.value = '';
-				txtArea.placeholder = "Вы добавили отметку o текущем дне :)))";
+				txtArea.placeholder = "Вы добавили отметку o текущем дне &#128512 :)))";
 
 			});
 			backCancel.addEventListener("click", () =>{
@@ -91,8 +95,8 @@ const renderCalendar = () => {
 		});
   	});
 
-
-
+	const emoji = document.querySelector("#emojiMonth");
+	emoji.innerText = monthsEmoji[currMonth];
 	
 }
 
@@ -126,4 +130,3 @@ backIcon.addEventListener("click", () =>{
 	backSide.style.display = "none";
 	renderCalendar();
 });
-
